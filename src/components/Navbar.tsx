@@ -22,9 +22,10 @@ export default function Navbar() {
     const [userName, setUserName] = useState<string | null>(null);
     const [userAvatar, setUserAvatar] = useState<string | null>(null);
     const router = useRouter();
-    const supabase = createClient();
 
     useEffect(() => {
+        const supabase = createClient();
+
         const checkUser = async () => {
             const { data: { user } } = await supabase.auth.getUser();
             setUser(user);
@@ -94,6 +95,7 @@ export default function Navbar() {
     }, []);
 
     const handleSignOut = async () => {
+        const supabase = createClient();
         await supabase.auth.signOut();
         router.push('/');
         router.refresh();
