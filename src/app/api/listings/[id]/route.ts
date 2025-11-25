@@ -2,6 +2,8 @@ import { createClient } from '@/lib/supabase/server';
 import { NextResponse } from 'next/server';
 import mockListings from '@/data/mock_listings.json';
 
+export const runtime = 'edge';
+
 export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
     const supabase = await createClient();
     const { id } = await params;

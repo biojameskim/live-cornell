@@ -1,6 +1,8 @@
 import { createClient } from '@/lib/supabase/server';
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+
 // GET: Fetch inquiries for the current user's listings (Host View)
 export async function GET(request: Request) {
     const supabase = await createClient();
