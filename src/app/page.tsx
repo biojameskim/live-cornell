@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
-import Navbar from '@/components/Navbar';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -22,7 +21,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
-      <Navbar />
+
 
       {/* Hero Section */}
       <section className="bg-red-900 text-white py-20 px-4">
@@ -67,13 +66,13 @@ export default function Home() {
               <div className="bg-blue-100 p-3 rounded-full mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
               </div>
-              <h2 className="text-2xl font-bold mb-2">Official Listings</h2>
+              <h2 className="text-2xl font-bold mb-2">Research Properties</h2>
               <p className="text-slate-600 mb-6 flex-grow">
-                Browse verified properties from local management companies. Filter by distance to campus, heating type, and more.
+                Explore all official housing options in Ithaca. View property details, amenities, and location info regardless of availability.
               </p>
-              <Link href="/listings?type=official" className="w-full">
+              <Link href="/properties" className="w-full">
                 <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50">
-                  Browse Official Listings
+                  View Properties
                 </Button>
               </Link>
             </CardContent>

@@ -243,3 +243,36 @@ drop policy if exists "Users can create inquiries" on inquiries;
 create policy "Users can create inquiries"
   on inquiries for insert
   with check ( auth.uid() = sender_id );
+
+-- Reviews Table
+create table if not exists reviews (
+  id uuid primary key default uuid_generate_v4(),
+  listing_id uuid references listings(id) on delete cascade,
+  user_id uuid references auth.users(id) on delete cascade,
+  rating integer not null check (rating >= 1 and rating <= 5),
+  comment text,
+  created_at timestamptz default now(),
+  unique(listing_id, user_id)
+);
+
+alter table reviews enable row level security;
+
+drop policy if exists "Reviews are viewable by everyone" on reviews;
+create policy "Reviews are viewable by everyone"
+  on reviews for select
+  using ( true );
+
+drop policy if exists "Authenticated users can create reviews" on reviews;
+create policy "Authenticated users can create reviews"
+  on reviews for insert
+  with check ( auth.role() = 'authenticated' and auth.uid() = user_id );
+
+drop policy if exists "Users can update their own reviews" on reviews;
+create policy "Users can update their own reviews"
+  on reviews for update
+  using ( auth.uid() = user_id );
+
+drop policy if exists "Users can delete their own reviews" on reviews;
+create policy "Users can delete their own reviews"
+  on reviews for delete
+  using ( auth.uid() = user_id );

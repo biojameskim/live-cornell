@@ -6,7 +6,6 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import Navbar from '@/components/Navbar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { createClient } from '@/lib/supabase/client';
 
@@ -112,7 +111,7 @@ export default function NewSubletPage() {
 
     return (
         <div className="min-h-screen bg-slate-50">
-            <Navbar />
+
             <div className="container mx-auto py-10 px-4">
                 <Card className="max-w-2xl mx-auto">
                     <CardHeader>

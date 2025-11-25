@@ -16,11 +16,16 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useRouter } from 'next/navigation';
 
-export default function Navbar() {
-    const [user, setUser] = useState<User | null>(null);
-    const [loading, setLoading] = useState(true);
-    const [userName, setUserName] = useState<string | null>(null);
-    const [userAvatar, setUserAvatar] = useState<string | null>(null);
+interface NavbarProps {
+    initialUser?: User | null;
+    initialProfile?: { first_name: string | null; avatar_url: string | null } | null;
+}
+
+export default function Navbar({ initialUser = null, initialProfile = null }: NavbarProps) {
+    const [user, setUser] = useState<User | null>(initialUser);
+    const [loading, setLoading] = useState(!initialUser);
+    const [userName, setUserName] = useState<string | null>(initialProfile?.first_name || null);
+    const [userAvatar, setUserAvatar] = useState<string | null>(initialProfile?.avatar_url || null);
     const router = useRouter();
 
     useEffect(() => {
@@ -110,7 +115,10 @@ export default function Navbar() {
 
                 <div className="hidden md:flex items-center gap-6">
                     <Link href="/listings" className="text-sm font-medium hover:text-red-700 transition-colors">
-                        Browse Listings
+                        Listings
+                    </Link>
+                    <Link href="/properties" className="text-sm font-medium hover:text-red-700 transition-colors">
+                        Properties
                     </Link>
                     <Link href="/sublets/new" className="text-sm font-medium hover:text-red-700 transition-colors">
                         Post a Sublet

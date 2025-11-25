@@ -19,10 +19,10 @@ export async function GET(request: Request) {
     try {
         let query = supabase.from('listings').select('*');
 
-        if (neighborhood) query = query.eq('neighborhood', neighborhood);
-        if (minPrice) query = query.gte('rent', minPrice);
-        if (maxPrice) query = query.lte('rent', maxPrice);
-        if (bedrooms) query = query.gte('bedrooms', bedrooms);
+        if (neighborhood) query = query.ilike('neighborhood', neighborhood);
+        if (minPrice) query = query.gte('rent', parseInt(minPrice));
+        if (maxPrice) query = query.lte('rent', parseInt(maxPrice));
+        if (bedrooms) query = query.gte('bedrooms', parseInt(bedrooms));
         if (heating) query = query.eq('heating_type', heating);
 
         if (type === 'official') query = query.eq('is_official_listing', true);
@@ -34,7 +34,7 @@ export async function GET(request: Request) {
             console.warn('Supabase error, falling back to mock data:', error.message);
             // Fallback to mock data filtering
             let filtered = mockListings;
-            if (neighborhood) filtered = filtered.filter(l => l.neighborhood === neighborhood);
+            if (neighborhood) filtered = filtered.filter(l => l.neighborhood.toLowerCase() === neighborhood.toLowerCase());
             if (minPrice) filtered = filtered.filter(l => l.rent >= parseInt(minPrice));
             if (maxPrice) filtered = filtered.filter(l => l.rent <= parseInt(maxPrice));
             if (bedrooms) filtered = filtered.filter(l => l.bedrooms >= parseInt(bedrooms));

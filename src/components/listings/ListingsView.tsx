@@ -6,7 +6,6 @@ import ListingCard from './ListingCard';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import Navbar from '@/components/Navbar';
 import MapComponent from '@/components/map/Map';
 
 import { useSearchParams } from 'next/navigation';
@@ -81,7 +80,7 @@ export default function ListingsView() {
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50">
-            <Navbar />
+
 
             <div className="flex-grow flex flex-col md:flex-row h-[calc(100vh-64px)]">
                 {/* Sidebar / List */}

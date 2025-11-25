@@ -4,7 +4,6 @@ import { useState, useEffect, Suspense } from 'react';
 
 export const dynamic = 'force-dynamic';
 import { useSearchParams, useRouter } from 'next/navigation';
-import Navbar from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -278,7 +277,7 @@ function ProfileContent() {
 export default function ProfilePage() {
     return (
         <div className="min-h-screen bg-slate-50">
-            <Navbar />
+
             <Suspense fallback={<div className="container mx-auto py-10 text-center">Loading...</div>}>
                 <ProfileContent />
             </Suspense>

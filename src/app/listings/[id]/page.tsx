@@ -4,7 +4,6 @@ export const runtime = 'edge';
 
 import { useState, useEffect, use } from 'react';
 import { Listing } from '@/types';
-import Navbar from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -37,7 +36,8 @@ export default function ListingDetailsPage({ params }: { params: Promise<{ id: s
     if (loading) {
         return (
             <div className="min-h-screen bg-slate-50">
-                <Navbar />
+
+
                 <div className="container mx-auto py-10 text-center">Loading...</div>
             </div>
         );
@@ -46,7 +46,8 @@ export default function ListingDetailsPage({ params }: { params: Promise<{ id: s
     if (!listing) {
         return (
             <div className="min-h-screen bg-slate-50">
-                <Navbar />
+
+
                 <div className="container mx-auto py-10 text-center">
                     <h1 className="text-2xl font-bold mb-4">Listing Not Found</h1>
                     <Link href="/listings">
@@ -59,7 +60,7 @@ export default function ListingDetailsPage({ params }: { params: Promise<{ id: s
 
     return (
         <div className="min-h-screen bg-slate-50">
-            <Navbar />
+
             <div className="container mx-auto py-8 px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Left Column: Photos & Details */}

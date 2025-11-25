@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Example Property Name",
+        "address": "123 College Ave, Ithaca, NY 14850",
+        "description": "A brief description of the property, its amenities, and atmosphere.",
+        "photos": [
+            "https://example.com/photo1.jpg",
+            "https://example.com/photo2.jpg"
+        ],
+        "neighborhood": "Collegetown",
+        "heating_type": "Gas",
+        "nearest_tcat_route": "30",
+        "latitude": 42.4418,
+        "longitude": -76.4850
+    }
+]
