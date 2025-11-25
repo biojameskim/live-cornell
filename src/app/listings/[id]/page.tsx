@@ -1,6 +1,6 @@
 'use client';
 
-export const dynamic = 'force-dynamic';
+export const runtime = 'edge';
 
 import { useState, useEffect, use } from 'react';
 import { Listing } from '@/types';
