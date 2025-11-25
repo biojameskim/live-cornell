@@ -41,25 +41,30 @@ A centralized housing platform for the Cornell University community in Ithaca, N
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Data Pipeline (Scraper)
+### Official Listings Scraper
 
-To generate mock data or run the scraper:
+The platform includes production-ready scrapers for 11+ Ithaca property management websites:
 
 1. Install Python dependencies:
    ```bash
    pip install -r scripts/requirements.txt
    ```
 
-2. Run the scraper:
+2. Run the scrapers to collect listings:
    ```bash
-   python3 scripts/scrape.py
+   python scripts/run_scrapers.py
    ```
-   This will output JSON to stdout and save to `scripts/mock_listings.json`.
+   This generates `scripts/data/scraped_listings.json` with real data from live websites.
 
-3. To use this data in the app (if not using DB), copy it to `src/data`:
+3. Seed the database with scraped listings:
    ```bash
-   cp scripts/mock_listings.json src/data/mock_listings.json
+   npx tsx scripts/seed_scraped.ts
    ```
+   This will upsert listings and automatically remove stale ones.
+
+**Supported Sites**: Ithaca Renting, Travis Hyde Properties, City Centre, Lux & Lofts, Urban Ithaca, Lambrou Real Estate, and more.
+
+**Maintenance**: Run the scraper + seed script weekly to keep listings fresh. The system automatically removes listings that are no longer available.
 
 ## Database Setup (Supabase)
 
@@ -73,9 +78,42 @@ To generate mock data or run the scraper:
 - **Heating Cost Estimates**: Infers heating type (Electric Baseboard vs Gas/Steam) from descriptions to warn about potential high winter costs.
 - **TCAT Integration**: Infers nearest bus routes (10, 30, 81) based on street address.
 
-## Future Improvements
+## Contributing
 
-- Real Google Maps API integration (currently mocked).
-- Image upload for sublets (requires Supabase Storage).
-- User profiles and dashboard.
-- Live scraping of real property management sites (currently using mock HTML).
+We welcome contributions from the Cornell community! Whether you're fixing bugs, adding features, or improving documentation, your help makes this platform better for everyone.
+
+### How to Contribute
+
+1. **Fork the repository** and create a new branch for your feature:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+2. **Make your changes** and ensure they follow the existing code style.
+
+3. **Test your changes** locally:
+   ```bash
+   npm run dev
+   ```
+
+4. **Commit your changes** with clear, descriptive messages:
+   ```bash
+   git commit -m "Add: brief description of your changes"
+   ```
+
+5. **Push to your fork** and submit a pull request:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+### Questions?
+
+Open an issue or feel free to reach out . We're here to help!
+
+## Future Improvements (Contribution Ideas)
+
+- **Automated Scraping**: Set up cron jobs or GitHub Actions to run scrapers automatically
+- **Enhanced Messaging**: Direct messaging between users and hosts
+- **Mobile App**: React Native version for iOS/Android
+- **Advanced Filters**: Commute time calculator, pet-friendly search, furnished options
+- **Reviews & Ratings**: Community feedback on landlords and properties
