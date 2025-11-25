@@ -5,6 +5,16 @@ export default function MorePage() {
             <main className="container mx-auto py-10 px-4">
                 <h1 className="text-4xl font-bold text-slate-900 mb-8">Housing Information</h1>
 
+                # Useful links
+                <ul className="list-disc space-y-2">
+                    <li>
+                        <a href="https://housing.cornell.edu/">Cornell Housing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.johnson.cornell.edu/new-students/living-in-ithaca/housing">Johnson Center Housing Tips</a>
+                    </li>
+                </ul>
+
                 <div className="bg-white rounded-lg shadow-sm p-8 space-y-8">
                     <section>
                         <h2 className="text-2xl font-semibold text-slate-800 mb-4">University Housing vs. Off-Campus Rental Housing</h2>

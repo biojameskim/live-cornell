@@ -1,16 +1,167 @@
 [
     {
-        "title": "Example Property Name",
-        "address": "123 College Ave, Ithaca, NY 14850",
-        "description": "A brief description of the property, its amenities, and atmosphere.",
+        "title": "Ithaca Renting Company",
+        "address": "118 Prospect St, Suite 200, Ithaca, NY 14850",
+        "description": "Large student-focused property manager with many buildings in Collegetown and Downtown Ithaca. Office at 118 Prospect St, Suite 200 (main administrative office). Website: https://ithacarenting.com. Typical student-facing features: 1-year leases starting in summer, many units furnished, heat/hot water often included in Collegetown buildings, and a mix of studios up to large shared apartments close to Cornell.",
         "photos": [
-            "https://example.com/photo1.jpg",
-            "https://example.com/photo2.jpg"
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
         ],
-        "neighborhood": "Collegetown",
-        "heating_type": "Gas",
-        "nearest_tcat_route": "30",
-        "latitude": 42.4418,
-        "longitude": -76.4850
+        "neighborhood": "Downtown Ithaca & Collegetown (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "CSP Management",
+        "address": "421 N Aurora Street, Ithaca, NY 14850",
+        "description": "Established Ithaca property manager (since 1990) with a large portfolio of apartments and houses, including a Cornell-focused set of properties. Office at 421 N Aurora St in the Fall Creek/Downtown area. Website: https://cspmanagement.com. They manage older and newer buildings across several neighborhoods; good option if you’re open to living slightly off Collegetown while staying within bus/walk distance to Cornell.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Fall Creek, Downtown Ithaca & surrounding neighborhoods (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Travis Hyde Properties",
+        "address": "306 N Cayuga St, Ithaca, NY 14850",
+        "description": "Locally owned property manager (founded 1977) with apartments and mixed-use buildings in central Ithaca, including options convenient to Cornell by bus or bike. Office at 306 N Cayuga St (just off the Commons). Website: https://www.travishyde.com. They tend to offer smaller and mid-sized apartment buildings; good for students who want a more ‘city apartment’ feel in Downtown while remaining commutable to campus.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Downtown Ithaca & nearby residential streets (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Novarr-Mackesey / Ithaca Student Apartments",
+        "address": "115 S Quarry St, Ithaca, NY 14850",
+        "description": "Novarr-Mackesey Property Management operates purpose-built student housing marketed as Ithaca Student Apartments (e.g., Collegetown Terrace and related properties) very close to Cornell. Main contact address listed as 115 South Quarry St, Ithaca, NY 14850. Website: https://www.ithacastudentapartments.com. Generally newer construction, dense student buildings, and strong walkability to campus — often at a more premium price point but with modern amenities.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Collegetown & East Hill / East State Street corridor (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "PJ Apartments",
+        "address": "102 Highland Pl, Ithaca, NY 14850",
+        "description": "Family-run landlord specializing in renovated historic houses and small apartment buildings one block from Cornell in Collegetown. A flagship cluster of their properties is at and around 102 Highland Place. Website: https://pjapts.com. Strong focus on fully furnished units in classic Collegetown houses with good reviews from Cornell students; many units include utilities and in-building or in-unit laundry.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Collegetown (primarily Highland Place, Williams St, Buffalo St, etc.)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Modern Living Rentals (MLR)",
+        "address": "200 E Buffalo St, Suite 201, Ithaca, NY 14850",
+        "description": "Branded as “affordable luxury” apartments for students and professionals with numerous buildings in Collegetown and Downtown (e.g., The Bear, The Outlook, Summit/Sate Street locations). Main office address: 200 E Buffalo St, Suite 201, Ithaca, NY 14850. Website: https://www.modernlivingrentals.com. Good option if you want newer, amenity-rich buildings (study pods, gyms, rooftop spaces in some properties) and are okay paying more for updated finishes.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Collegetown & Downtown Ithaca (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Ashley Management / Ithaca Rental Housing (The Ashley Companies)",
+        "address": "95 Brown Road, M/S 1015, Ithaca, NY 14850",
+        "description": "Ashley Management (The Ashley Companies) runs Ithaca Rental Housing, a portfolio of 1–3 bedroom apartments and 3–5 bedroom houses near Cornell, many within walking distance of Collegetown and campus (e.g., Stewart Ave and Thurston Ave properties). Corporate/management address: 95 Brown Road, M/S 1015, Ithaca, NY 14850. Website: https://www.ithacarentalhousing.com. Their units are largely older homes with historic charm; good if you want walk-to-campus and don’t mind older construction.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Stewart Ave, Thurston Ave, and surrounding North Campus/Collegetown area (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Iacovelli Properties",
+        "address": "602 W Seneca St, Apt 2B, Ithaca, NY 14850",
+        "description": "Family-owned landlord/property manager with houses and apartments around Ithaca, including Downtown, South Hill, and student-friendly areas. Main contact/location commonly listed as 602 W Seneca St, Apt 2B, Ithaca, NY 14850. Website: http://iacovelliproperties.com (often also linked via liveithaca.com for listings). Mix of larger houses and smaller apartments; often used by students who are okay being a bit farther from Collegetown in exchange for price/space.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Downtown Ithaca, South Hill & broader Ithaca area (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": 42.44032528972968,
+        "longitude": -76.50895406810497
+    },
+    {
+        "title": "NEST Communities",
+        "address": "226 Cecil Malone Dr, Suite 2, Ithaca, NY 14850",
+        "description": "NEST Communities is a property management/lifestyle brand with a diverse set of properties in and around Ithaca and Cortland, including several marketed heavily to Cornell students (e.g., University Park, 318 E Seneca St, 126 College Ave, and other student-oriented addresses). Their Ithaca office is at 226 Cecil Malone Dr, Suite 2. Website: https://www.mynestlife.com. They mix boutique-style buildings and community-focused complexes; some properties are pure student housing, others more general market-rate apartments.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Various: Downtown, Collegetown, West Hill & Uptown Road complexes (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Tall Tree Properties",
+        "address": null,
+        "description": "Smaller landlord specializing in student houses and apartments close to Cornell’s North Campus and Collegetown (e.g., 505 Wyckoff Rd, 117 Thurston Ave, 526 Stewart Ave, and other near-campus addresses). Website (listings portal): https://propertymanage.biz/u54386/rentals/listings. Frequently recommended in local forums as attentive landlords for Cornell students. Good if you want a house/apartment on or near the hill by Thurston/Stewart with quick walk or bus access to campus.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "North Campus / Thurston Ave / Stewart Ave area (multiple properties)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
+    },
+    {
+        "title": "Lux & Lofts (The Lux and The Lofts)",
+        "address": "112–114 Summit St, Ithaca, NY 14850",
+        "description": "Purpose-built, upscale student apartments in Collegetown operating as a combined community across multiple buildings (including 112 Summit St and 201 College Ave). Main office/address is listed as Lux Ithaca Main Office, 112–114 Summit St, Ithaca, NY 14850. Website: https://www.luxandlofts.com. Strong Cornell focus, fully student-oriented, with modern amenities, furnished units, and easy walk to campus; typically higher rent but designed for shared student living.",
+        "photos": [
+            "https://placehold.co/600x400?text=Living+Room",
+            "https://placehold.co/600x400?text=Bedroom",
+            "https://placehold.co/600x400?text=Kitchen"
+        ],
+        "neighborhood": "Collegetown (Summit St & College Ave buildings)",
+        "heating_type": null,
+        "nearest_tcat_route": null,
+        "latitude": null,
+        "longitude": null
     }
 ]
