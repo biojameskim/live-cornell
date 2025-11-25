@@ -123,6 +123,9 @@ export default function Navbar({ initialUser = null, initialProfile = null }: Na
                     <Link href="/sublets/new" className="text-sm font-medium hover:text-red-700 transition-colors">
                         Post a Sublet
                     </Link>
+                    <Link href="/more" className="text-sm font-medium hover:text-red-700 transition-colors">
+                        More
+                    </Link>
 
                     {loading ? (
                         <div className="w-8 h-8 bg-slate-100 rounded-full animate-pulse" />

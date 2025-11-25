@@ -1,6 +1,6 @@
 'use client';
 
-export const runtime = 'edge';
+
 
 import { useState, useEffect } from 'react';
 import { Listing } from '@/types';

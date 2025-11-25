@@ -15,11 +15,13 @@ from scrapers.urban_ithaca import UrbanIthacaScraper
 from scrapers.demos_johnny import DemosJohnnyScraper
 from scrapers.lambrou import LambrouScraper
 from scrapers.collegetown_terrace import CollegetownTerraceScraper
+from scrapers.cornell_offcampus import CornellOffCampusScraper
 
 def run_all_scrapers():
     all_listings: List[Listing] = []
     
     scrapers = [
+        ("Cornell Off-Campus", CornellOffCampusScraper()),
         ("Ithaca Renting", IthacaRentingScraper()),
         ("Travis Hyde", TravisHydeScraper()),
         ("City Centre", CityCentreScraper()),

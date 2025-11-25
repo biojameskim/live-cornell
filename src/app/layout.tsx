@@ -18,32 +18,18 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "@/components/Navbar";
-import { createClient } from "@/lib/supabase/server";
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-
-  let profile = null;
-  if (user) {
-    const { data } = await supabase
-      .from('profiles')
-      .select('first_name, avatar_url')
-      .eq('id', user.id)
-      .single();
-    profile = data;
-  }
-
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar initialUser={user} initialProfile={profile} />
+        <Navbar />
         {children}
       </body>
     </html>

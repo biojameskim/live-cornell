@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';

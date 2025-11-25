@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 
-export const runtime = 'edge';
+
 import ListingsView from '@/components/listings/ListingsView';
 
 export default function ListingsPage() {
